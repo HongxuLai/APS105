@@ -132,7 +132,7 @@ bool checkLegalInDirection(char board[][26], int n, int row, int col, char colou
 // from 8 directions to check if this move is valid
 bool isValidMove(char board[][26], int n, int row, int col, char colour)
 {
-    // tile to be checked must be within the board and not be 'U'
+    // tile to be checked must be within the board and be 'U'
     if (!positionInBounds(n, row, col) || board[row][col] != 'U')
     {
         return false;
